@@ -43,5 +43,5 @@
     // "moduleDetection": "force",
     "skipLibCheck": true,
   },
-  "include": ["ES6"],
+  "include": ["classes"],
 }
