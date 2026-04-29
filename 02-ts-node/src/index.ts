@@ -1,15 +1,6 @@
-import { Player } from './classes/Player';
-// import { Player as SuperPlayer } from './classes/Player';
-// import * as PlayerClasses from './classes/Player';
-import powers from './data/powers';
+import { getPokemon } from "./generics/get-pokemon";
 
-// const player = new SuperPlayer('Nicolás', 1, 25);
-const player = new Player('Nicolás', 1, 25);
-    
-console.log(player);
-console.log('Poderes: ', powers);
-console.log(`Poder de ${player.name}: ${player.power}`);
-
-// console.log('Poder de ' + player.name + ': ', player.power);
-
-// console.log('Powers: ', powers);
+getPokemon(4)
+    .then(pokemon => console.log(pokemon.sprites.front_default))
+    .catch(error => console.error(error))
+    .finally(() => console.log('Fin de getPokemon'));
